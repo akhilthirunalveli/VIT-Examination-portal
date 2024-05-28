@@ -3,7 +3,7 @@
 
 Welcome to the VIT Bhopal Examination Portal! This platform is designed to streamline the examination process for students and faculty at VIT Bhopal.
 
-![VIT Bhopal Examination Portal](https://example.com/screenshot.png)
+![VIT Bhopal Examination Portal](https://github.com/akhilthirunalveli/VIT-Examination-portal/blob/main/VIT-Exam%20Page.png)
 
 ## Table of Contents
 
@@ -11,11 +11,8 @@ Welcome to the VIT Bhopal Examination Portal! This platform is designed to strea
 - [Demo](#demo)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [File Structure](#file-structure)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+
 
 ## Features
 
@@ -34,6 +31,8 @@ Check out the live demo of the portal [here](https://examination-portal-nine.ver
 - HTML
 - CSS
 - JavaScript
+- SQL
+- SENDER
 
 ## Getting Started
 
