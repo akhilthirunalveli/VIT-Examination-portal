@@ -5,19 +5,6 @@ Welcome to the VIT Bhopal Examination Portal! This comprehensive platform is des
 
 ![VIT Bhopal Examination Portal](https://github.com/akhilthirunalveli/VIT-Examination-portal/blob/main/docs/VIT-Exam-Page.png)
 
-## Table of Contents
-
-- [Features](#features)
-- [Demo](#demo)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [File Organization](#file-organization)
-- [Styling Features](#styling-features)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 
 ### Core Functionality
@@ -97,11 +84,24 @@ VIT-Examination-portal/
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
-- SQL
-- SENDER
+### Frontend
+- **HTML5** - Modern semantic markup
+- **CSS3** - Advanced styling with custom properties, flexbox, and grid
+- **JavaScript (ES6+)** - Interactive functionality and DOM manipulation
+- **Remix Icons** - Comprehensive icon library
+- **Swiper.js** - Touch slider components
+- **Google Fonts (Poppins)** - Modern typography
+
+### Design Features
+- **Glassmorphism Effects** - Modern UI with backdrop blur
+- **Responsive Design** - Mobile-first approach
+- **CSS Custom Properties** - Consistent theming
+- **Custom Scrollbars** - Branded gold scrollbars
+- **Smooth Animations** - Enhanced user experience
+
+### Backend Integration Ready
+- **SQL Database** - Data persistence layer
+- **SENDER** - Communication system
 
 ## Getting Started
 
@@ -109,25 +109,97 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-Make sure you have a modern web browser installed.
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Local web server (optional but recommended)
+- Text editor or IDE
 
 ### Installation
 
-1. **Clone the repo**
+1. **Clone the repository**
 
-   ```sh
-   git clone https://github.com/your-username/vit-bhopal-examination-portal.git
-   cd vit-bhopal-examination-portal
+   ```bash
+   git clone https://github.com/akhilthirunalveli/VIT-Examination-portal.git
+   cd VIT-Examination-portal
    ```
 
-2. **Open the project**
+2. **Start a local server** (recommended)
 
-   Open the `index.html` file in your preferred web browser.
+   Using Python:
+   ```bash
+   # Python 3
+   python -m http.server 5500
+   
+   # Python 2
+   python -m SimpleHTTPServer 5500
+   ```
 
+   Using Node.js:
+   ```bash
+   npx serve .
+   ```
+
+   Using VS Code Live Server extension:
+   - Install Live Server extension
+   - Right-click on `index.html`
+   - Select "Open with Live Server"
+
+3. **Access the application**
+
+   Open your browser and navigate to `http://localhost:5500`
 
 ## Usage
 
-1. **Register as a new user** or **log in** if you already have an account.
-2. **Admin users** can create and manage exams from the admin dashboard.
-3. **Students** can view their upcoming exams, take exams, and check results from their dashboard.
+### For Students
+1. **Access the Portal:** Open the application and select "Student Portal"
+2. **Login:** Use your student credentials to access your dashboard
+3. **Dashboard:** View upcoming exams, timetables, and announcements
+4. **Take Exams:** Access and complete online examinations
+5. **View Results:** Check exam results and performance analytics
+
+### For Administrators
+1. **Admin Access:** Select "Admin Portal" from the login selection page
+2. **Login:** Use administrator credentials to access admin dashboard
+3. **Manage Exams:** Create, schedule, and manage examinations
+4. **Student Management:** View and manage student records
+5. **Timetable:** Create and update examination schedules
+6. **System Settings:** Configure portal settings and preferences
+
+## File Organization
+
+The project follows a clean, modular structure:
+
+- **`/assets/`** - All static assets organized by type
+- **`/css/`** - Modular stylesheets for different components
+- **`/js/`** - JavaScript modules for specific functionality
+- **`/pages/`** - HTML pages organized by user role and function
+
+## Styling Features
+
+### Color Scheme
+- **Primary:** Gold (#f8f208) and Orange (#ee9821)
+- **Secondary:** Dark blue variants (#04091d, #0f1221, #03060f)
+- **Accent:** Light text (#94a3b8) and White (#ffffff)
+
+### Key Design Elements
+- **Glassmorphism:** Translucent containers with backdrop blur
+- **Custom Scrollbars:** Gold-themed scrollbars matching brand colors
+- **Responsive Layout:** Mobile-first design with breakpoints
+- **Smooth Transitions:** Enhanced user experience with animations
+- **Modern Typography:** Poppins font family for readability
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+**VIT Bhopal University Examination Portal** - Streamlining education through technology
 
