@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>VIT Examination Portal - Login</title>
+    <link rel="shortcut icon" href="../../assets/images/logos/header.png">
+    <style>
+        :root {
+            --primary-color: #f8f208;
+            --primary-color-dark: #ee9821;
+            --secondary-color: #000000;
+            --secondary-color-light: #0f1221;
+            --secondary-color-dark: #03060f;
+            --text-light: #94a3b8;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #04091d 0%, #0f1221 50%, #03060f 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            overflow: hidden;
+            position: relative;
+        }
+
+    
+        .logo {
+            margin-bottom: 1rem;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .login-options {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .login-card {
+            background: rgba(255, 255, 255, 0);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--white);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .login-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+
+        .login-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .login-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .login-card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .login-card-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-weight: 300;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-weight: 300;
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-home:hover {
+            color: var(--primary-color-dark);
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 2rem 1.5rem;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+            
+            .login-options {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .login-card {
+                padding: 1.2rem;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-decoration"></div>
+    
+    <div class="container">
+        <div class="logo">
+            <img src="../../assets/images/logos/header.png" alt="VIT Logo">
+        </div>
+        
+        <h1 class="title">Welcome to VIT</h1>
+        <p class="subtitle">Examination Portal - Choose your login type</p>
+        
+        <div class="login-options">
+            <a href="student-login.html" class="login-card">
+                <div class="login-card-icon">
+                    <i class="ri-graduation-cap-line"></i>
+                </div>
+                <div class="login-card-title">Student Portal</div>
+                <div class="login-card-desc">Access your exams, timetables, and results</div>
+            </a>
+            
+            <a href="admin-login.html" class="login-card">
+                <div class="login-card-icon">
+                    <i class="ri-admin-line"></i>
+                </div>
+                <div class="login-card-title">Admin Portal</div>
+                <div class="login-card-desc">Manage exams, students, and system settings</div>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p class="footer-text">VIT Bhopal University Examination System</p>
+            <a href="../../index.html" class="back-home">
+                <i class="ri-arrow-left-line"></i>
+                Back to Home
+            </a>
+        </div>
+    </div>
+</body>
+</html>
